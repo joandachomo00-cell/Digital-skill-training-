@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Digital Skills Training Hub —</title>
+<meta name="description" content=" page for Digital Skills Training Hub. Explore courses like Dropshipping, Web Development, and Graphic Design.  page for testing or presentation purposes — NOT a real organisation." />
+<meta name="robots" content="index,follow" />
+<style>
+body { font-family: Arial, sans-serif; margin:0; color:#111; background:#f7f7f7; }
+header { background:#0b74de; color:white; padding:30px 20px; text-align:center; }
+header h1 { margin:0; font-size:2em; }
+header p { font-size:1em; margin-top:6px; }
+.container { max-width:900px; margin:20px auto; padding:16px; }
+.notice { background:#fff3cd; border:1px solid #ffeeba; padding:12px; margin-bottom:20px; border-radius:6px; font-weight:600; color:#856404; text-align:center; }
+.card { background:white; border:1px solid #e6e6e6; padding:20px; border-radius:10px; margin-bottom:20px; box-shadow:0 4px 10px rgba(0,0,0,0.05); }
+h2 { color:#0b74de; }
+ul { padding-left:20px; }
+a.cta { display:inline-block; margin-top:12px; padding:10px 20px; background:#0b74de; color:white; border-radius:8px; text-decoration:none; }
+#countdown { font-size:1.5em; font-weight:bold; color:#d9534f; text-align:center; margin-top:10px; }
+.certificate { border:2px dashed #0b74de; padding:20px; text-align:center; border-radius:10px; margin-top:10px; background:#e9f2fb; }
+footer { text-align:center; color:#666; padding:18px; font-size:14px; }
+</style>
+</head>
+<body>
+
+<header>
+<h1>Digital Skills Training Hub — </h1>
+<p>Empowering individuals with practical digital skills — PAGE</p>
+</header>
+
+<main class="container">
+
+<div class="notice">
+⚠️ IMPORTANT: This page is a <strong> / SAMPLE</strong> for presentation or testing purposes. <strong>.
+</div>
+
+<!-- About the Organization -->
+<section class="card">
+<h2>About Us</h2>
+<p>Digital Skills Training Hub provides hands-on, in-person training to help individuals develop practical skills for the digital economy. We offer courses in Dropshipping, Web Development, Graphic Design, and more. Our goal is to equip learners with the knowledge and tools to succeed in modern digital businesses.</p>
+</section>
+
+<!-- Courses Offered -->
+<section class="card">
+<h2>Courses We Offer</h2>
+<ul>
+<li><strong>Dropshipping:</strong> Learn product research, supplier sourcing, store setup, and fulfillment.</li>
+<li><strong>Web Development:</strong> Build responsive websites and web applications.</li>
+<li><strong>Graphic Design:</strong> Create professional visuals using modern design tools.</li>
+<li><strong>Digital Marketing:</strong> Master social media, SEO, and online advertising techniques.</li>
+</ul>
+</section>
+
+<!-- Featured Course / Example -->
+<section class="card">
+<h2>Featured Course: Dropshipping</h2>
+<a class="cta" href="#details">View Course Details</a>
+<div id="countdown"></div>
+</section>
+
+<!-- Course Details -->
+<section id="details" class="card">
+<h2>Course Overview</h2>
+<ul>
+<li>Hands-on modules on product research, supplier sourcing, store setup, and fulfillment.</li>
+<li>Daily sessions: 9:00 AM — 2:00 PM.</li>
+<li>Bring a notebook and a laptop for practical exercises.</li>
+<li>Networking opportunities with other participants.</li>
+</ul>
+</section
+<!-- Contact -->
+<section class="card">
+<h2>Contact (Demo)</h2>
+</section>
+
+</main>
+
+<footer>
+<script>
+// Countdown timer to course start date
+var countDownDate = new Date("Nov 18, 2025 09:00:00").getTime();
+var countdownElement = document.getElementById("countdown");
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  if(distance < 0) {
+    countdownElement.innerHTML = "Course has started!";
+    clearInterval(x);
+    return;
+  }
+  var days = Math.floor(distance / (1000*60*60*24));
+  var hours = Math.floor((distance % (1000*60*60*24))/(1000*60*60));
+  var minutes = Math.floor((distance % (1000*60*60))/(1000*60));
+  var seconds = Math.floor((distance % (1000*60))/1000);
+  countdownElement.innerHTML = "Course starts in: " + days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s";
+}, 1000);
+</script>
+
+</body>
+</html>
